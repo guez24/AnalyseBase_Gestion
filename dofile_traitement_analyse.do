@@ -9,12 +9,11 @@ describe
 misstable summarize
 
 //STATISTIQUE DESCRIPTIVE
-summarize age salaire experience
+summarize salaire
 
-//VISUALISATION DE LA DISTRIBUTION DES VARIABLES
-***Distribution de l'age
-histogram age, percent title("Distribution de l'âge des enmployés")
-xlabel(25(5)60) ylabel (,angle (horizontal))
+tab salaire
 
-tab age
+histogram salaire, percent title ("Distribution des salaires des employés") xlabel(2500(500)7000) ylabel(,angle(horizontal))
+
+
 
